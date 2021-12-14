@@ -18,9 +18,10 @@ public class Main_IntStream {
                 .forEach(System.out::println);
 
         try (Stream<Path> stream = Files.walk(Paths.get("."))) {
-            stream.filter(p -> !p.toString().contains("target"))
-                    .map(p -> getFileSize(p))
-                    .forEach(System.out::println);
+            long sum = stream.filter(p -> !p.toString().contains("target"))
+                    .mapToLong(p -> getFileSize(p))
+                    .sum();
+            System.out.println("Velikost projektu: " + sum);
         }
     }
 
