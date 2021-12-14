@@ -24,7 +24,7 @@ public class Main {
         }
         System.out.println(Strings.repeat("Hello World Maven! ", 3));
 
-        List<String> files = Arrays.asList("pom.xml", "src/main/resources/logback.xml2");
+        List<String> files = Arrays.asList("pom.xml", "src/main/resources/logback.xml");
 
         files.stream()
                 .forEach(file -> {
