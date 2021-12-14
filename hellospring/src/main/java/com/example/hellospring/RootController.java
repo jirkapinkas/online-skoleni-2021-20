@@ -19,7 +19,7 @@ public class RootController {
     public Message message(@RequestHeader(name = "User-Agent", required = false)
                                        String userAgent) {
         log.info("Requested message");
-        log.info(userAgent);
+        log.info("UserAgent: {}", userAgent);
 //        return new Message("Spring Boot Rocks", 200);
         return Message.builder()
                 .message("Spring Boot Rocks")
