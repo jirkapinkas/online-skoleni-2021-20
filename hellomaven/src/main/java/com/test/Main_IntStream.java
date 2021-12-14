@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Main_IntStream {
 
@@ -16,10 +17,11 @@ public class Main_IntStream {
         IntStream.range(0, 100)
                 .forEach(System.out::println);
 
-        Files.walk(Paths.get("."))
-                .filter(p -> !p.toString().contains("target"))
-                .map(p -> getFileSize(p))
-                .forEach(System.out::println);
+        try (Stream<Path> stream = Files.walk(Paths.get("."))) {
+            stream.filter(p -> !p.toString().contains("target"))
+                    .map(p -> getFileSize(p))
+                    .forEach(System.out::println);
+        }
     }
 
     public static long getFileSize(Path path) {
