@@ -1,9 +1,6 @@
-package com.example.hellospring;
+package com.test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 import java.util.function.Consumer;
 
 // Jediny rozdil mezi interface a abstract class od Java 8:
