@@ -34,7 +34,7 @@ public class Main_Vlakna_List_Reseni {
             buffer.remove(0);
         }
 
-        System.out.println(buffer.size()); // problem: vysledek je nepredvidatelny
+        System.out.println(buffer.size());
     }
 
 }
