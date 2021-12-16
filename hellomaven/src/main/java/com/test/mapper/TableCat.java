@@ -1,7 +1,9 @@
 package com.test.mapper;
 
+import jakarta.xml.bind.annotation.XmlRootElement;
 import lombok.*;
 
+@XmlRootElement
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
