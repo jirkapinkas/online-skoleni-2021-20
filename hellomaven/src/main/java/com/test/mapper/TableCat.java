@@ -2,6 +2,7 @@ package com.test.mapper;
 
 import lombok.*;
 
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
