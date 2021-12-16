@@ -8,6 +8,7 @@ public class Main_Vlakna_List_Reseni {
 
     // Nejlepsi reseni problemu s vlakny:
     // Collections.synchronizedXXX()
+    // U mapy: ConcurrentHashMap
     private static List<Integer> buffer = Collections.synchronizedList(new ArrayList<>());
 
     public static void main(String[] args) throws InterruptedException {
