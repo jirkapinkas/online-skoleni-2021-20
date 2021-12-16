@@ -4,7 +4,7 @@ public class Main_Vlakna_Counter_Reseni_Synchronized {
 
     private static int counter = 0;
 
-    private static final Object[] mutex = new Object[1];
+    private static final Object[] mutex = new Object[0];
 
     public static void inc() {
         synchronized (mutex) {
