@@ -18,13 +18,13 @@ public class ItemController {
     @Autowired
     private ItemService itemService;
 
-    // http://localhost:8080/item
+    // http://localhost:9090/item
     @GetMapping
     public List<Item> items() {
         return itemService.findAll();
     }
 
-    // http://localhost:8080/item/1
+    // http://localhost:9090/item/1
     @GetMapping("/{id}")
     public Optional<Item> item(@PathVariable int id) {
         return itemService.findById(id);
