@@ -22,3 +22,5 @@ Docker registry:
 - Docker Hub (nejjednodussi, ale free je pouze public)
 - Github
 - Gitlab
+- registry
+- nexus / artifactory
